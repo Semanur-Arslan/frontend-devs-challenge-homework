@@ -4,7 +4,12 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const encodedKey = "5hs7xs93bS5m8pY5D7nZTs3cT4DnEtZQrUNTyaWtZ4x3E7JMHcv7r87P12nuzoAQrpZ8S1Cgo66QLGRMUtazhiWg";
+   
+const encodedKey = process.env.encodedKey;
+if (!encodedKey) {
+     throw new Error('encodedKey not found in .env file');
+ }
+
 
 const kp = bs58.decode(encodedKey);
 
