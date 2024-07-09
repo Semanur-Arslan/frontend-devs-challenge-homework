@@ -18,7 +18,7 @@ import {
    // my wallett 
    require('dotenv').config();
    
-   const kpArrayStr = process.env.KP_ARRAY;
+   const kpArrayStr: string | undefined = process.env.KP_ARRAY;
    if (!kpArrayStr) {
         throw new Error('KP_ARRAY not found in .env file');
     }

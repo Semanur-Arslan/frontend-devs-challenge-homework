@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
    
-const encodedKey = process.env.encodedKey;
+const encodedKey: string | undefined  = process.env.encodedKey;
 if (!encodedKey) {
      throw new Error('encodedKey not found in .env file');
  }
