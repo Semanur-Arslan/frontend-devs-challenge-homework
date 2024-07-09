@@ -1,0 +1,22 @@
+{
+  "name": "frontend-devs-challenge-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "call_program": "ts-node ./call_program.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.95.0",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
